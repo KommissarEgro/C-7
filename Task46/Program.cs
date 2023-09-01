@@ -8,8 +8,6 @@
 // 1    5  -2  33   -2
 // 2    77  3   8    1
 
-
-// Создание матрицы
 int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 {
     int[,] matrix = new int[rows, columns];
@@ -34,7 +32,7 @@ void PrintMatrix(int[,] matrix)
         // Console.Write("|");
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            Console.Write($"{matrix[i, j], 5}");
+            Console.Write($"{matrix[i, j],5}");
         }
         Console.WriteLine();
     }
