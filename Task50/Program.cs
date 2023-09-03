@@ -28,7 +28,6 @@ int[,] CreateNumberRndInt(int rows, int columns, int min, int max)
 
 }
 
-
 void PrintNumber(int[,] number)
 {
     for (int i = 0; i < number.GetLength(0); i++)
@@ -42,12 +41,6 @@ void PrintNumber(int[,] number)
     }
 }
 
-void CheckNumArr(int[,] number)
-{
-if (rows > number.GetLength(0) && columns > number.GetLength(1))
-    Console.WriteLine("Введите число меньше");
-}
-
 void CheckIndArr(int[,] number)
 {
     if (rows <= number.GetLength(0) && columns <= number.GetLength(1))
@@ -55,8 +48,6 @@ void CheckIndArr(int[,] number)
     else Console.WriteLine($"{rows}, {columns} -> такого числа в массиве нет");
 }
 
-
 int[,] numbers = CreateNumberRndInt(3, 4, 1, 10);
 PrintNumber(numbers);
 CheckIndArr(numbers);
-CheckNumArr(numbers);
